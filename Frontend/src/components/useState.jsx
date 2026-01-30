@@ -11,7 +11,7 @@ const Counter = () => {
       <button onClick={() => setCount(count - 1)}>Decrement</button>
       <button onClick={() => setCount(0)}>Reset</button> */}
       <button onClick={increment}>Increment</button>
-      <button onClick={decrement}>Decrement</button>
+      <button disabled={count <= 0 && true } onClick={decrement}>Decrement</button>
       <button onClick={reset}>Reset</button>
     </div>
   );
