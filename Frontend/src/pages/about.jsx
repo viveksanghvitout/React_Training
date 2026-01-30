@@ -1,6 +1,7 @@
 import { Link } from "react-router-dom";
 import { useEffect, useState } from "react";
 import Product from "../components/product.jsx";
+import ReduxUse from "../components/reduxUse.jsx"
 
 
 const About = () => {
@@ -14,7 +15,11 @@ const About = () => {
         <Link to="/">Home</Link>
       </nav>
       <br />
+    <div>
+      <ReduxUse/>
     </div>
+    </div>
+    <br />
     <div>
         <Product/>
     </div>
