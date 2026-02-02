@@ -1,7 +1,8 @@
 import { Link } from "react-router-dom";
 import { useEffect, useState } from "react";
 import Product from "../components/product.jsx";
-import ReduxUse from "../components/reduxUse.jsx"
+import ReduxUse from "../components/reduxUse.jsx";
+import LocationPicker from "../components/map/loaction.jsx";
 
 
 const About = () => {
@@ -22,6 +23,10 @@ const About = () => {
     <br />
     <div>
         <Product/>
+    </div>
+    <br />
+    <div>
+      <LocationPicker/>
     </div>
     </>
   );
