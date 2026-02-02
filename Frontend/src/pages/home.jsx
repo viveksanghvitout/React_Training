@@ -6,6 +6,7 @@ import Counter from "../components/useState.jsx";
 import ThemeToggle from "../components/ThemeButton.jsx";
 import { ThemeContext } from "../context/ThemeContext.jsx";
 import {lazy} from 'react'
+import MyMap from '../components/map/map.jsx'
 
 const jwt = import.meta.env.VITE_JWT;
 console.log(jwt);
@@ -55,6 +56,8 @@ const Home = () => {
       <button onClick={logout}>
         Logout
       </button>
+      <br />
+      <div><MyMap /></div>
     </div>
   );
 };

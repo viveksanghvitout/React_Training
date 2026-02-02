@@ -15,9 +15,9 @@ const About = () => {
         <Link to="/">Home</Link>
       </nav>
       <br />
+    </div>
     <div>
       <ReduxUse/>
-    </div>
     </div>
     <br />
     <div>

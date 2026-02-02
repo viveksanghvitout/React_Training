@@ -33,8 +33,7 @@
 
 
 import { useState } from 'react';
-import {useNavigate,Link} from 'react-router-dom'
-// import {}
+import {useNavigate} from 'react-router-dom'
 
 function ControlledForm() {
     const [email, setEmail] = useState("");
@@ -77,7 +76,7 @@ function ControlledForm() {
           </form>
           <br/>
           <br/>
-          <button><Link to={-1}>Go Back</Link></button>
+          <button onClick={() => window.history.back()}>Go Back</button>
         </>
     );
 }

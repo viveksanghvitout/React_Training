@@ -1,9 +1,9 @@
 import axios from "axios";
-import { ENVCONFIG } from './config/envConfig.js'
-const api = axios.create({
-  baseURL: ENVCONFIG.ENV,
-  timeout: 10000,
+import { ENV } from "../config/env";
 
+const api = axios.create({
+  baseURL: ENV.API.URL,
+  timeout: 10000,
 });
 
 api.interceptors.request.use(
